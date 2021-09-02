@@ -5,6 +5,12 @@ import (
 )
 
 func main() {
-	fmt.Println("Test")
 
+	cards := []string{"Ace of Diamonds", newCard()}
+	cards = append(cards, "Six of Spades")
+	fmt.Println(cards)
+}
+
+func newCard() string {
+	return "5 of Diamonds"
 }
